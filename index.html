@@ -11,7 +11,7 @@
     <!-- Futuristic font -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS for sci-fi look -->
+    <!-- Custom CSS for sci-fi look (no glow) -->
     <style>
       body {
         font-family: 'Orbitron', sans-serif;
@@ -23,34 +23,31 @@
       .app-name img {
         max-width: 150px;
         border-radius: 10px;
-        filter: drop-shadow(0 0 8px #00fff7);
         margin-bottom: 20px;
       }
 
       /* Sidebar */
       .sidebar-nav {
         background: #1f2833;
-        border-right: 2px solid #00fff7;
+        border-right: 2px solid #00fff7; /* neon border */
         padding: 15px;
         margin-top: 20px;
       }
 
       /* Sidebar links */
       .sidebar-nav a {
-        color: #66fcf1;           /* neon cyan instead of blue */
+        color: #66fcf1;           /* neon cyan */
         font-weight: bold;
         text-decoration: none;
       }
 
       .sidebar-nav a:hover {
-        color: #45a29e;
-        text-shadow: 0 0 10px #00fff7;
+        color: #45a29e;          /* hover color */
       }
 
       /* Sidebar headers */
       .sidebar-nav strong {
         color: #45a29e;
-        text-shadow: 0 0 8px #00fff7;
       }
 
       .sidebar-nav ul {
@@ -63,24 +60,18 @@
 
       /* Markdown links */
       .markdown-section a {
-        color: #66fcf1 !important;      /* override default blue */
+        color: #66fcf1 !important;  
         text-decoration: none;
       }
 
       .markdown-section a:hover {
         color: #45a29e !important;
-        text-shadow: 0 0 10px #00fff7;
       }
 
       /* Dark/light toggle button */
       .docsify-dark-light-switch {
         background: #00fff7;
         border-radius: 50%;
-        box-shadow: 0 0 10px #00fff7;
-      }
-
-      .docsify-dark-light-switch:hover {
-        box-shadow: 0 0 20px #00fff7;
       }
     </style>
   </head>
@@ -94,8 +85,8 @@
         logo: 'logo.png',
         loadSidebar: true,
         repo: 'JacobSaulnier1997/fluxmesh-website',
-        darkLightTheme: true,           // Enable dark/light toggle
-        darkLightThemePosition: 'right' // Toggle button position
+        darkLightTheme: true,
+        darkLightThemePosition: 'right'
       };
     </script>
 
