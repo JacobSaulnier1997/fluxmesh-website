@@ -1,2 +1,2 @@
-# fluxmesh-website-
+# fluxmesh-website
 Documentation site for FluxMesh
