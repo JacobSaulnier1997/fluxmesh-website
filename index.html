@@ -4,16 +4,29 @@
     <meta charset="UTF-8" />
     <title>FluxMesh Docs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Docsify dark theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" />
+    <style>
+      /* Optional: add spacing between logo and sidebar */
+      .app-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .sidebar-nav {
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <script>
       window.$docsify = {
         name: 'FluxMesh Docs',
-        logo: 'logo.png',   // 👈 add logo here
-        loadSidebar: true
-      }
+        logo: 'logo.png',      // 👈 your logo file name here
+        loadSidebar: true,
+        repo: 'JacobSaulnier1997/fluxmesh-website', // optional: GitHub link
+      };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   </body>
