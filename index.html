@@ -35,17 +35,19 @@
         margin-top: 20px;
       }
 
+      /* Sidebar links */
       .sidebar-nav a {
-        color: #66fcf1;
+        color: #66fcf1;           /* neon cyan instead of blue */
         font-weight: bold;
         text-decoration: none;
       }
 
       .sidebar-nav a:hover {
-        text-shadow: 0 0 10px #00fff7;
         color: #45a29e;
+        text-shadow: 0 0 10px #00fff7;
       }
 
+      /* Sidebar headers */
       .sidebar-nav strong {
         color: #45a29e;
         text-shadow: 0 0 8px #00fff7;
@@ -57,6 +59,17 @@
 
       .sidebar-nav li {
         transition: all 0.3s ease-in-out;
+      }
+
+      /* Markdown links */
+      .markdown-section a {
+        color: #66fcf1 !important;      /* override default blue */
+        text-decoration: none;
+      }
+
+      .markdown-section a:hover {
+        color: #45a29e !important;
+        text-shadow: 0 0 10px #00fff7;
       }
 
       /* Dark/light toggle button */
@@ -93,4 +106,3 @@
     <script src="//cdn.jsdelivr.net/npm/docsify-darklight@1"></script>
   </body>
 </html>
-
